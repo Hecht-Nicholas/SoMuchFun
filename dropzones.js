@@ -3,8 +3,6 @@
 window.onload = function() {
 // enable draggables to be dropped into this
  interact('.dropzone').dropzone({
-     // only accept elements matching this CSS selector
-     accept: '#yes-drop',
      // Require a 75% element overlap for a drop to be possible
      overlap: 0.75,
     
@@ -45,7 +43,7 @@ window.onload = function() {
       inertia: true,
       // keep the element within the area of it's parent
       restrict: {
-        restriction: "parent",
+        restriction: ".dropzone",
         endOnly: true,
         elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
       },

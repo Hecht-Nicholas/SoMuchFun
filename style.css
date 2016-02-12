@@ -16,6 +16,16 @@
 	transition: background-color 0.3s;
 	}
 
+.non-activedropzone {
+	background-color: #ccc;
+	border: dashed 4px transparent;
+	border-radius: 4px;
+	margin: 10px auto 30px;
+	padding: 10px;
+	width: 80%;
+	transition: background-color 0.3s;
+	}
+
 .drop-active {
 	border-color: #aaa;
 }
